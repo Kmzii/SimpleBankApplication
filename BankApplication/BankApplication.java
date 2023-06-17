@@ -41,6 +41,7 @@ public class BankApplication {
         } else {
             System.out.println("Invalid username or password. Access denied.");
         }
+        sc.close();
     }
     //to check account name
     public static boolean check(BankAccount[] bankAccounts, String n){
@@ -194,5 +195,6 @@ class BankAccount {
         } while (option != 'e');
 
         System.out.println("Thank you for using our banking services");
+        sc.close();
     }
 }
